@@ -116,7 +116,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 
 		mess = {
 			wait: 'Sabar Lagi Proses Tod...!',
-			success: 'Done Jangan Lupa Subscribe LeonGanz',
+			success: 'Done Jangan Lupa Subscribe WHTLN',
 			error: {
 				stick: 'Gagal Convert Gambar To Sticker...Coba Lagi !',
 				Iv: 'Linknya Error Tod !'
@@ -126,7 +126,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 				group: 'Khusus Group Tod !'
 			}
 		}
-		faketeks = '©Created : LeonGanz'
+		faketeks = '©Created : WHTLN'
 		let isUrl = (url) => {
         return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
         }
@@ -325,7 +325,7 @@ switch (command) {
 💞 Owner Number : ${owner}
 🐊 Runtime : ${process.uptime()}
 🐜 Speed : ${latensi.toFixed(4)} second
-✉️ Email : enderforestghu@gmail.com
+✉️ Email : jhonmark@gmail.com
 ☕ Browser : Linux
 🌍 Lengauge : Javascript`
 but = [
@@ -506,7 +506,7 @@ Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Se
 └⬣
 `
 teks =
-`Ini Sc Buatan LeonGanz Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
+`Ini Sc Buatan WHTLN Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
 but = [
           { buttonId: `${prefix}infobot`, buttonText: { displayText: '☰ INFO' }, type: 1 },
           { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 }
@@ -784,7 +784,7 @@ reply(mess.error.stick)
 .on('end', function () {
 console.log('Finish')
 buffer = fs.readFileSync(ran)
-costum(buffer, sticker, Verived, `Jangan Lupa Subscribe LeonGanz`)
+costum(buffer, sticker, Verived, `Jangan Lupa Subscribe WHTLN`)
 fs.unlinkSync(media)
 fs.unlinkSync(ran)
 })
@@ -849,7 +849,7 @@ exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
 if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
 buffer = fs.readFileSync(ran)
-costum(buffer, image, Verived, `Jangan Lupa Subscribe LeonGanz`)
+costum(buffer, image, Verived, `Jangan Lupa Subscribe WHTLN`)
 fs.unlinkSync(ran)
 })
 break
@@ -877,7 +877,7 @@ ran = getRandom('.webp')
 exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
 fs.unlinkSync(anum)
 buffer = fs.readFileSync(ran)
-zeroyt7.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done... Jangan Lupa Subscribe LeonGanz' })
+zeroyt7.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done... Jangan Lupa Subscribe WHTLN' })
 fs.unlinkSync(ran)
 })
 break
@@ -889,7 +889,7 @@ let inilist = []
 for (let i of ownerNumber) {
 let vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'LeonGanz',
+"displayName": 'WHTLN',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${ownername}\n`
@@ -945,7 +945,7 @@ reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaik
 break
 case 'youtube':
 teks =
-`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/LeonGanz`
+`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/WHTLN`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'instagram':
@@ -1533,7 +1533,7 @@ ini_url = args[0]
 ini_url = `https://api.lolhuman.xyz/api/tiktok?apikey=${zerokey}&url=${ini_url}`
 get_result = await fetchJson(ini_url)
 ini_buffer = await getBuffer(get_result.result.link)
-await zeroyt7.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+await zeroyt7.sendMessage(from, ini_buffer, video, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN'})
 break
 case 'tiktokmusic':
 if (args.length == 0) return reply(`Link Nya Mana Tod\nContoh: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
@@ -1547,7 +1547,7 @@ query = args.join(" ")
 ini_url = await fetchJson(`https://api.lolhuman.xyz/api/pinterest?apikey=${zerokey}&query=${query}`)
 ini_url = ini_url.result
 ini_buffer = await getBuffer(ini_url)
-await zeroyt7.sendMessage(from, ini_buffer, image, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+await zeroyt7.sendMessage(from, ini_buffer, image, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN'})
 break
 case 'instagram':
 case 'ig':
@@ -1573,49 +1573,49 @@ case 'asupan':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.result)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupancecan':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/cecan?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupanhijaber':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/hijaber?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupansantuy':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/santuy?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupanukhti':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/ukty?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupanbocil':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/bocil?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupanghea':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/ghea?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 case 'asupanrika':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/rikagusriani?apikey=${zerkey}`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 break
 
 //━━━━━━━━━━━━━━━[ FITUR RANDOM MEME ]━━━━━━━━━━━━━━━━━//
@@ -1623,19 +1623,19 @@ break
 case 'meme':
 await getBuffer(`https://api.lolhuman.xyz/api/random/meme?apikey=${zerokey}`).then((gambar) => {
 reply(mess.wait)
-zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 })
 break
 case 'darkjoke':
 await getBuffer(`https://api.lolhuman.xyz/api/meme/darkjoke?apikey=${zerokey}`).then((gambar) => {
 reply(mess.wait)
-zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 })
 break
 case 'memeindo':
 await getBuffer(`https://api.lolhuman.xyz/api/meme/memeindo?apikey=${zerokey}`).then((gambar) => {
 reply(mess.wait)
-zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz', thumbnail: Buffer.alloc(0)})
+zeroyt7.sendMessage(from, gambar, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN', thumbnail: Buffer.alloc(0)})
 })
 break
 
@@ -1894,7 +1894,7 @@ break
 //━━━━━━━━━━━━━━━[ FITUR PRIMBON ]━━━━━━━━━━━━━━━━━//
 
 case 'artinama':
-if (args.length == 0) return reply(`Namamya Mana Tod\nContoh: ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Namamya Mana Tod\nContoh: ${prefix + command} WHTLN`)
 ini_nama = args.join(" ")
 get_result = await fetchJson(`https://api.lolhuman.xyz/api/artinama?apikey=${zerokey}&nama=${ini_nama}`)
 reply(get_result.result)
@@ -1923,7 +1923,7 @@ ini_txt += `Deskripsi : ${get_result.deskripsi}`
 reply(ini_txt)
 break
 case 'tebakumur':
-if (args.length == 0) return reply(`Namanya Mana Tod\nContoh: ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Namanya Mana Tod\nContoh: ${prefix + command} WHTLN`)
 ini_name = args.join(" ")
 if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
 get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebakumur?apikey=${zerokey}&name=${ini_name}`)
@@ -1993,7 +1993,7 @@ case 'megumin':
 case 'wallnime':
 getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${zerokey}`).then((gambar) => {
 reply(mess.wait)
-zeroyt7.sendMessage(from, gambar, image, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+zeroyt7.sendMessage(from, gambar, image, { quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe WHTLN'})
 })
 break
 
